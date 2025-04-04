@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.backdrop {
+  background-color: rgba(172, 171, 171, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.getStarted {
+  cursor: pointer;
+  display: block;
+  width: 130px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.getStarted:hover {
+  background-color: hsl(12, 91%, 68%);
+}
+
+header {
+  width: 1112px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+header nav ul li {
+  color: hsl(233, 12%, 13%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+header nav ul li:hover {
+  color: hsl(227, 12%, 61%);
+}
+header nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+header #hamburgerIcon {
+  display: none;
+  z-index: 2;
+}
+
+main #legend {
+  width: 1112px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  align-items: center;
+}
+main #legend .legendDetails h1 {
+  font-size: 36px;
+  width: 80%;
+  color: hsl(228, 39%, 23%);
+}
+main #legend .legendDetails p {
+  color: hsl(227, 12%, 61%);
+  margin-top: 20px;
+  width: 68%;
+}
+main #legend .legendDetails button {
+  margin-top: 22px;
+}
+main #differentAboutManage {
+  width: 1112px;
+  margin: 50px auto 0 auto;
+  display: flex;
+}
+main #differentAboutManage .left-side, main #differentAboutManage .right-side {
+  flex: 1;
+}
+main #differentAboutManage .left-side h2 {
+  font-size: 29px;
+  color: hsl(228, 39%, 23%);
+  width: 80%;
+}
+main #differentAboutManage .left-side p {
+  color: hsl(227, 12%, 61%);
+  margin-top: 15px;
+  width: 60%;
+  font-size: 15px;
+}
+main #differentAboutManage .right-side .right-side-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+main #differentAboutManage .right-side .right-side-item .indicator {
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  width: 105px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 0;
+  margin-right: 10px;
+}
+main #differentAboutManage .right-side .right-side-item div h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: hsl(228, 39%, 23%);
+}
+main #differentAboutManage .right-side .right-side-item div p {
+  color: hsl(227, 12%, 61%);
+  font-size: 14px;
+}
+main #whatTheySaid {
+  margin-top: 100px;
+}
+main #whatTheySaid h2 {
+  text-align: center;
+}
+main #whatTheySaid #peopleList {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 520px 520px 520px 520px;
+  gap: 15px;
+  overflow-x: scroll;
+}
+main #whatTheySaid #peopleList .peopleItem {
+  background-color: #fafafa;
+  width: 520px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+main #whatTheySaid #peopleList .peopleItem img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+main #whatTheySaid #peopleList .peopleItem h4 {
+  color: hsl(228, 39%, 23%);
+}
+main #whatTheySaid #peopleList .peopleItem p {
+  font-size: 14px;
+  color: hsl(227, 12%, 61%);
+  width: 80%;
+  margin: 7px auto 0 auto;
+}
+main #whatTheySaid button {
+  margin: 25px auto;
+}
+main #simplify {
+  margin-top: 100px;
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  padding: 30px 0;
+}
+main #simplify div {
+  width: 1112px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #simplify div h2 {
+  width: 25%;
+}
+main #simplify div button {
+  cursor: pointer;
+  display: block;
+  width: 130px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: hsl(12, 88%, 59%);
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  background-color: #1e1e26;
+  color: white;
+  padding: 25px 0;
+}
+footer .container {
+  width: 1112px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .container #footerLogo {
+  filter: invert(99%) sepia(11%) saturate(306%) hue-rotate(288deg) brightness(115%) contrast(100%);
+}
+footer .container #socialContainer {
+  display: flex;
+  margin-top: 60px;
+}
+footer .container #socialContainer img:not(:last-child) {
+  margin-right: 10px;
+}
+footer .container #footerLinks {
+  display: flex;
+}
+footer .container #footerLinks ul {
+  margin-right: 130px;
+  list-style-type: none;
+}
+footer .container #footerLinks ul li {
+  font-size: 14px;
+  color: hsl(227, 12%, 61%);
+  cursor: pointer;
+}
+footer .container #footerLinks ul li:not(:first-child) {
+  margin-top: 15px;
+}
+footer .container #formAndCopyright #form {
+  display: flex;
+  align-items: center;
+}
+footer .container #formAndCopyright #form input {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+footer .container #formAndCopyright #form input:focus {
+  outline: none;
+}
+footer .container #formAndCopyright #form button {
+  display: block;
+  margin-left: 15px;
+  width: 50px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+footer .container #formAndCopyright .invalid, footer .container #formAndCopyright .valid {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 15px;
+  display: none;
+}
+footer .container #formAndCopyright .invalid {
+  color: hsl(12, 88%, 59%);
+}
+footer .container #formAndCopyright .valid {
+  color: rgb(52, 201, 52);
+}
+footer .container #formAndCopyright .copyrightText {
+  font-size: 12px;
+  color: hsl(227, 12%, 61%);
+  margin-top: 50px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 95%;
+  }
+  header nav {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    width: 95%;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  header nav ul li:not(:first-child) {
+    margin-top: 20px;
+  }
+  header button {
+    display: none !important;
+  }
+  header #hamburgerIcon {
+    display: block;
+  }
+  main #legend {
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  main #legend .legendImage img {
+    width: 100%;
+  }
+  main #legend .legendDetails {
+    width: 100%;
+  }
+  main #legend .legendDetails h1 {
+    text-align: center;
+    margin: auto;
+  }
+  main #legend .legendDetails p {
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 74%;
+  }
+  main #legend .legendDetails button {
+    margin: 22px auto 0 auto;
+  }
+  main #differentAboutManage {
+    width: 95%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main #differentAboutManage .left-side, main #differentAboutManage .right-side {
+    flex: 1;
+  }
+  main #differentAboutManage .left-side h2 {
+    font-size: 29px;
+    color: hsl(228, 39%, 23%);
+    width: 80%;
+  }
+  main #differentAboutManage .left-side p {
+    color: hsl(227, 12%, 61%);
+    margin-top: 15px;
+    width: 60%;
+    font-size: 15px;
+  }
+  main #differentAboutManage .right-side .right-side-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  main #differentAboutManage .right-side .right-side-item .indicator {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    width: 105px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 6px 0;
+    margin-right: 10px;
+  }
+  main #differentAboutManage .right-side .right-side-item div h3 {
+    font-size: 19px;
+    font-weight: 500;
+    color: hsl(228, 39%, 23%);
+  }
+  main #differentAboutManage .right-side .right-side-item div p {
+    color: hsl(227, 12%, 61%);
+    font-size: 14px;
+  }
+  main #whatTheySaid {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
