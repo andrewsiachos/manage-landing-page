@@ -417,4 +417,48 @@ footer{
             display: none;
         }
     }
+
+    footer{
+        .container{
+            width: 95%;
+            margin: auto;
+            flex-direction: column-reverse;
+            #logoAndSocial{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+            #footerLogo{
+                filter: invert(99%) sepia(11%) saturate(306%) hue-rotate(288deg) brightness(115%) contrast(100%);
+                width: 50%;
+                margin: 30px auto 0 auto;
+            }
+            #socialContainer{
+                justify-content: center;
+                width: 100%;
+            }
+    
+            #footerLinks{
+                margin-top: 25px;
+                width: 100%;
+                justify-content: center;
+                ul{
+                    margin-right: 20px;
+                }
+            }
+    
+            #formAndCopyright{
+                width: 100%;
+                #form{
+                    justify-content: center;
+                }
+    
+    
+                .copyrightText{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
